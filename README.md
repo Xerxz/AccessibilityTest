@@ -9,5 +9,5 @@ Google Sample App: https://github.com/android/compose-samples/tree/main/JetNews
 
 Google Architecture Sample https://github.com/android/architecture-samples
 
-[(Screenshot_20220613_143931.png)|width=100px]
-<img src="Screenshot_20220613_143931.png" width="48">
+<img src="Screenshot_20220613_143931.png" width="250">
+<img src="Screenshot_20220613_144101.png" width="250">
