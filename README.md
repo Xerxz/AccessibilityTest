@@ -1,5 +1,8 @@
-Kotlin / Compose Accessibility test App
+Kotlin / Compose Accessibility test App using Clean Architecture
+
 https://github.com/merttoptas/BaseApp-Jetpack-Compose-Android-Kotlin
+
+
 
 https://paulallies.medium.com/clean-architecture-in-the-flavour-of-jetpack-compose-dd4b0016f815
 
