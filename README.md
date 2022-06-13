@@ -10,5 +10,5 @@ Google Sample App: https://github.com/android/compose-samples/tree/main/JetNews
 Google Architecture Sample https://github.com/android/architecture-samples
 
 
-![Alt text](Screenshot_20220613_143931.png?raw=true)
+![Screenshot](Screenshot_20220613_143931.png?raw=true)
 ![Alt text](Screenshot_20220613_144101.png?raw=true)
