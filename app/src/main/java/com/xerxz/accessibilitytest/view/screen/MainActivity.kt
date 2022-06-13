@@ -15,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.xerxz.AccessibilityTestApp
 import com.xerxz.accessibilitytest.view.navigation.NavGraph
 import com.xerxz.accessibilitytest.view.screen.accessibility.AccessibilityViewModel
+import com.xerxz.accessibilitytest.view.screen.semantics.SemanticsViewModel
 import com.xerxz.accessibilitytest.view.ui.theme.AccessibilityTestTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,6 +24,7 @@ class MainActivity : ComponentActivity() {
 
 
     val accessibilityViewModel: AccessibilityViewModel by viewModels()
+    val semanticsViewModel: SemanticsViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +36,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     // Hilt in future to inject viewmodel
-                    NavGraph(_accessibilityViewModel = accessibilityViewModel)
+                    NavGraph(_accessibilityViewModel = accessibilityViewModel, _semanticsViewModel = semanticsViewModel)
                 }
             }
         }

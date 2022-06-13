@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AccessibilityTest</string>
     <string name="accessibility_screen_title">Accessibility</string>
+    <string name="semantics_screen_title">Semantics</string>
 </resources>

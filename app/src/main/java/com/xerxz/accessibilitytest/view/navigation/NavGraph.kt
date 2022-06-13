@@ -14,9 +14,15 @@ import com.xerxz.accessibilitytest.view.component.AccessibilityScaffold
 import com.xerxz.accessibilitytest.view.component.AccessibilityTopBar
 import com.xerxz.accessibilitytest.view.screen.accessibility.AccessibilityScreen
 import com.xerxz.accessibilitytest.view.screen.accessibility.AccessibilityViewModel
+import com.xerxz.accessibilitytest.view.screen.semantics.SemanticsScreen
+import com.xerxz.accessibilitytest.view.screen.semantics.SemanticsViewModel
 
 @Composable
-fun NavGraph(startDestination: String = NavScreen.Accessibility.route, _accessibilityViewModel: AccessibilityViewModel) {
+fun NavGraph(
+    startDestination: String = NavScreen.Accessibility.route,
+    _accessibilityViewModel: AccessibilityViewModel,
+    _semanticsViewModel: SemanticsViewModel
+) {
 
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
@@ -24,6 +30,7 @@ fun NavGraph(startDestination: String = NavScreen.Accessibility.route, _accessib
 
     // Provided via mainActivity, use Hilt to inject in viewmodel directly in future
     val accessibilityViewModel: AccessibilityViewModel = _accessibilityViewModel
+    val semanticsViewModel: SemanticsViewModel = _semanticsViewModel
 
     AccessibilityScaffold (
         bottomBar = {
@@ -46,6 +53,12 @@ fun NavGraph(startDestination: String = NavScreen.Accessibility.route, _accessib
             composable(BottomNav.Accessibility.route){
                 AccessibilityScreen(
                     viewModel = accessibilityViewModel
+                )
+            }
+
+            composable(BottomNav.Semantics.route){
+                SemanticsScreen(
+                    viewModel = semanticsViewModel
                 )
             }
         }
